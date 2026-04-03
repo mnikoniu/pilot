@@ -1,0 +1,4 @@
+project:
+  name: pilot
+  type: cross-org
+  description: Cross-org collaboration pilot project
