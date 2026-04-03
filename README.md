@@ -15,9 +15,10 @@ Cross-org collaboration repository for the **pilot** project.
 
 ## Setup
 
-1. Use the `eco` CLI to set up the multi-root workspace: `eco workspace setup`
-2. Run the BMAD installer to generate IDE integration files (`.windsurf/workflows/`, `.github/agents/`, etc.)
-3. Open the generated workspace file in your IDE
+1. Clone the `pca-bmad-runtime` repository into your workspace directory.
+2. Run the workspace setup script: `./bmad/scripts/eco-workspace-setup.sh`
+3. Open the generated workspace file in your IDE.
+4. BMAD agents resolve runtime files from the `bmad/` root directly.
 
 Your workspace will look like:
 
@@ -37,5 +38,5 @@ This repository is the **canonical source** for shared project artifacts. All sh
 ## Working Rules
 
 - Shared project changes are authored in this repository
-- BMAD runtime is accessed via the `pca-bmad-runtime` root in the multi-root workspace
+- BMAD runtime is accessed via the `bmad/` root in the multi-root workspace
 - PCA-only content lives in `docs/projects/pilot/`
